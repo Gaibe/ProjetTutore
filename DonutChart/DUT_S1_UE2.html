@@ -26,7 +26,7 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-d3.csv("DUT S1.csv", function(error, data) {
+d3.csv("DUT S1 UE2.csv", function(error, data) {
 
   data.forEach(function(d) {
     d.nb_eleve = +d.nb_eleve;
