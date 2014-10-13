@@ -55,7 +55,7 @@ var svg = d3.select("body").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.tsv("classementgeneral.tsv", type, function(error, data) {
-  x.domain(data.map(function(d) { return d.nom_prenom; }));
+  x.domain(data.map(function(d) { return d.nom; }));
   y.domain([0, d3.max(data, function(d) { return d.moyenne; })]);
 
   svg.append("g")
@@ -77,7 +77,7 @@ d3.tsv("classementgeneral.tsv", type, function(error, data) {
       .data(data)
     .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", function(d) { return x(d.nom_prenom); })
+      .attr("x", function(d) { return x(d.nom); })
       .attr("width", x.rangeBand())
       .attr("y", function(d) { return y(d.moyenne); })
       .attr("height", function(d) { return height - y(d.moyenne); });
