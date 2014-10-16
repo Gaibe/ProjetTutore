@@ -7,26 +7,37 @@
   <meta charset="utf-8">
   <title>Chart Viewer</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
 	<?php
-	$everyChart = array("BarChart", "DonutChart");
+	$DOSSIERDIAGRAMME = "chart";
+
+	if($dossier=opendir('./'.$DOSSIERDIAGRAMME)){
 	?>
 
-  	Choix d'un fichier .csv, .xlsx ou .xls
-	<form>
-		<input id="fileSelect" type="file" accept=".csv, .xlsx, .xls" name="chartfile"></br>
-		<input type="submit" value="Selectionner">
-	</form>
-	<?php
-	
-	foreach($everyChart as $chart){
-	?>
-		<a class="btn btn-default" href=<?php echo dirname($_SERVER["PHP_SELF"]) . '/chart/' . $chart . '/index.html'; ?>><?php echo $chart; ?></a>
-	<?php
+		<div class="container main-block">
+			<form class="border-block">
+				Choix d'un fichier .csv, .xlsx ou .xls
+				<input id="fileSelect" type="file" accept=".csv, .xlsx, .xls" name="chartfile"></br>
+				<input type="submit" value="Selectionner">
+			</form>
+			<div class="border-block">
+				<?php
+				while(false !=($listechart = readdir($dossier))){
+					if($listechart != '.' && $listechart != '..'){
+						echo "<a class='btn btn-default' href='./".$DOSSIERDIAGRAMME."/".$listechart."'>".$listechart."</a>";
+					}
+				}
+				?>
+			</div>
+			</div>
+		<?php
 	}
-
+	else{
+		echo "Dossier chart inexistant";
+	}
 	?>
 
 
