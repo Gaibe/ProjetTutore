@@ -1,0 +1,44 @@
+{
+ "name": "Type de bac",
+ "children": [
+  {
+   "name": "Scientique",
+   "children": [
+    {"name": "2010",
+     "children": [
+      {"name": "Bac S Année 2010", "size": 2}
+     ]
+    },
+    {
+     "name": "S2009",
+     "children": [
+      {"name": "Bac S Année 2009", "size": 2}
+     ]
+    },
+    {
+     "name": "2008",
+     "children": [
+      {"name": "Bac S Année 2008", "size": 1}
+     ]
+    },
+    {
+     "name": "Scientifique",
+     "children": [
+      {"name": "Baccalaureat Scientifique", "size": 17}
+     ]
+    }
+   ]
+  },
+  {
+    "name": "Economie et Social",
+    "children":[
+      {"name": "Baccalaureat ES", "size":1}
+    ]
+  },
+  {
+    "name": "Sciences et Technologies Industrielles",
+    "children":[
+      {"name": "Baccalaureat STI", "size":3}]
+  }
+ ]
+} 
