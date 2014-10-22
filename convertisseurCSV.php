@@ -18,6 +18,7 @@ while (!feof($file)) {
 fclose($tmpdirectory);
 fclose($file);
 
+$_SESSION["rand"] = "true";
 header('Location: index.php');
 
 ?>

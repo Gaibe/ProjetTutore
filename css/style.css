@@ -11,6 +11,6 @@
 .btn{
 	margin-right: 10px;
 }
-element.style .btn-primary{
-	display: inline-block;
+.main-block #fileform button.btn-primary{
+	display: inline-block !important;
 }

@@ -21,6 +21,8 @@ $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'CSV');
 
 $objWriter->save($tmppath.".csv");
 
+$_SESSION["rand"] = "true";
+
 header('Location: index.php');
 
 ?>

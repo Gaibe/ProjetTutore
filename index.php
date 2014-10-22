@@ -12,6 +12,12 @@
 <body>
 
 	<?php
+	if(isset($_SESSION["rand"]) && $_SESSION["rand"]=="true"){
+		echo "<p>Fichier convertit ajouter dans /data/</p>";
+		$_SESSION["rand"] = "false";
+	}
+
+
 	$DOSSIERDIAGRAMME = "chart";
 
 	if($dossier=opendir('./'.$DOSSIERDIAGRAMME)){
