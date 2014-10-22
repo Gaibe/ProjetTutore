@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+</head>
 <body>
-
 
 	Choix du diagramme des classements
 
-		<ul id="menu">
-
-				Classement au fil du DUT
-					<ul>
-						<li><a href="classementgeneral.html"> Général</a></li>
-
-						<li><a href="moyennes1.html"> Semestre 1</a></li>
-
-						<li><a href="moyennes2.html"> Semestre 2</a></li>
-
-						<li><a href="moyennes3.html"> Semestre 3</a></li>
-
-						<li><a href="moyennes4.html"> Semestre 4</a></li>
-					</ul>
-		</ul>
+	<div class="dropdown">
+	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+	    Classement
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+	  	<li role="presentation"><a role="menuitem" tabindex="-1" href="moyennes1.html">Général</a></li>
+	  	<li role="presentation" class="divider"></li>
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="moyennes1.html">Semestre 1</a></li>
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="moyennes2.html">Semestre 2</a></li>
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="moyennes3.html">Semestre 3</a></li>
+	    <li role="presentation"><a role="menuitem" tabindex="-1" href="moyennes4.html">Semestre 4</a></li>
+	  </ul>
+	</div>
 
 		<a href="../../index.php"> Retour à la page de selection du type de diagramme </a>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>	
 </body>
