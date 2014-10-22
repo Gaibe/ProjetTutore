@@ -1,60 +1,45 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
 <body>
 
 
 	Choix du diagramme des moyennes
 
-		<ul id="menu">
-
-				Moyenne Générale du DUT
-					<ul>
-						<li><a href="DUT.html"> Générale</a></li>
-					</ul>
-
-
-
-
-				Moyennes du semestre 1
-					<ul>
-						<li><a href="DUT_S1.html"> Générale</a></li>
-						<li><a href="DUT_S1_UE1.html"> UE1 </a></li>
-						<li><a href="DUT_S1_UE2.html"> UE2 </a></li>
-					</ul>
-	
-			
-				Moyenne du semestre 2
-
-					<ul>
-						<li><a href="DUT_S2.html"> Générale</a></li>
-						<li><a href="DUT_S2_UE1.html"> UE1 </a></li>
-						<li><a href="DUT_S2_UE2.html"> UE2 </a></li>
-					</ul>
-
-				Moyenne du semestre 3				
-					<ul>
-						<li><a href="DUT_S3.html"> Générale</a></li>
-						<li><a href="DUT_S3_UE1.html"> UE1 </a></li>
-						<li><a href="DUT_S3_UE2.html"> UE2 </a></li>
-					</ul>
+	<div class="dropdown">
+	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+	    Moyenne
+	    <span class="caret"></span>
+		  </button>
+					 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT.html">Général DUT</a></li>
+	  					<li role="presentation" class="divider"></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S1.html">Général semestre 1</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S1_UE1.html">Semestre 1 UE1</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S1_UE2.html">Semestre 1 UE2</a></li>
+	  					<li role="presentation" class="divider"></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S2.html">Général semestre 2</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S2_UE1.html">Semestre 2 UE1</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S2_UE2.html">Semestre 2 UE2</a></li>
+	  					<li role="presentation" class="divider"></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S3.html">Général semestre 3</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S3_UE1.html">Semestre 3 UE1</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S3_UE2.html">Semestre 3 UE2</a></li>
+	  					<li role="presentation" class="divider"></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S3.html">Général semestre 4</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S4_UE1.html">Semestre 4 UE1</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_S4_UE2.html">Semestre 4 UE2</a></li>
+	  					<li role="presentation" class="divider"></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_MATHS.html">Maths</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_GESTION.html">Gestion</a></li>
+	  					<li role="presentation"><a role="menuitem" tabindex="-1" href="DUT_Langu_exprecomm.html">Langues,Expre comm</a></li>
+					  </ul>
+	</div>
+		<a class="btn btn-primary" href="../../index.php"><span class="glyphicon glyphicon-chevron-left"></span> Retour</a>
 
 
-				Moyenne du semestre 4
-				
-					<ul>
-						<li><a href="DUT_S4.html"> Générale</a></li>
-						<li><a href="DUT_S4_UE1.html"> UE1 </a></li>
-						<li><a href="DUT_S4_UE2.html"> UE2 </a></li>
-					</ul>
-
-				Moyenne des matières
-				
-					<ul>
-						<li><a href="DUT_MATHS.html"> Maths</a></li>
-						<li><a href="DUT_Gestion.html"> Gestion </a></li>
-						<li><a href="DUT_Langu_exprecomm.html"> Langues,Expre comm </a></li>
-					</ul>
-		</ul>
-		<a href="../../index.php"> Retour à la page de selection du type de diagramme </a>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 </body>
 
